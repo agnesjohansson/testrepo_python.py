@@ -11,10 +11,11 @@ class Product(object):
 	def price_with_vat(self):
 		return self.price * self.count * self.vat
 
-robot = Product(price=900, count=2, vat=1.25)
-book = Product(price=100, count=1, vat=1.06)
+products = [Product(price=900, count=2, vat=1.25), Product(price=100, count=1, vat=1.08)]
 
-print robot.price_with_vat() + book.price_with_vat()
+print products[1].price
+
+
 
 
 
